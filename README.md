@@ -1,8 +1,8 @@
-# 📱 1st_project_phone_pay
+# 📱 Project phonepe
 
-A data analysis and visualization project using **PhonePe Pulse** data.
-PhonePe Pulse Transaction Insights – Data Analysis & Visualization Project
-🔍 Overview
+**PhonePe Pulse**  Transaction Insights – Data Analysis & Visualization Project
+
+## 🔍 Overview
 This project leverages the PhonePe Pulse Dataset to explore, analyze, and visualize digital transaction trends across India. The insights are drawn from various dimensions such as state-wise transaction patterns, device usage behavior, insurance penetration, and user engagement over time.
 
 The goal of this project is to extract meaningful business insights that can support decision-making for marketing, expansion, and user engagement strategies.
