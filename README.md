@@ -30,8 +30,7 @@ This project focuses on analyzing digital transaction trends across India using 
 
 ## 📷 Dashboard Preview
 
-![PhonePe Dashboard
-](http://localhost:8503/)
+![PhonePe Dashboard ScreenShort]("C:\Users\Admin\OneDrive\Videos\Pictures\Screenshots\Screenshot (26).png")
 
 ## 📁 Project Structure
 
