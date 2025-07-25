@@ -1,15 +1,15 @@
-# 📱 Project phonepe
+# Project phonepe
 
 **PhonePe Pulse**  Transaction Insights – Data Analysis & Visualization Project
 
-## 🔍 Overview
+## Overview
 This project leverages the PhonePe Pulse Dataset to explore, analyze, and visualize digital transaction trends across India. The insights are drawn from various dimensions such as state-wise transaction patterns, device usage behavior, insurance penetration, and user engagement over time.
 
 The goal of this project is to extract meaningful business insights that can support decision-making for marketing, expansion, and user engagement strategies.
 
 The Indian digital payments story has truly captured the world’s imagination. From the largest towns to the remotest villages, there is a payments revolution being driven by mobile phone penetration, internet access, and state-of-the-art payments infrastructure.
 
-PhonePe, launched in 2016, has played a significant role in this transformation. As a way to give back to the data and developer community, PhonePe released the PhonePe Pulse Dataset API, which is licensed under CDLA-Permissive-2.0 — an open data initiative to demystify digital payments in India.
+PhonePe, launched in 2016, has played a significant role in this transformation. As a way to give back to the data and developer community, PhonePe released the PhonePe Pulse Dataset API, which is licensed under [LICENSE] — an open data initiative to demystify digital payments in India.
 
 ## Table of Contents
 PhonePe Pulse - Data
@@ -34,6 +34,18 @@ data/top/user/country/india/2021/1.json
 data/top/insurance/country/india/2021/1.json
 FAQs
 LICENSE
+
+## Goal
+The goal of this project is to analyze and visualize the PhonePe Pulse dataset to uncover insights into digital payment trends across India.
+
+## Guide
+This data has been structured to provide details of following three sections with data cuts on Transactions, Users and Insurance of PhonePe Pulse - Explore tab.
+
+1.Aggregated - Aggregated values of various payment categories as shown under Categories section
+2.Map - Total values at the State and District levels.
+3.Top - Totals of top States / Districts /Pin Codes
+All the data provided in these folders is of JSON format. For more details on the structure/syntax you can refer to the JSON Structure / Syntax section of the documentation.
+
 
 ## 📌 Project Overview
 
