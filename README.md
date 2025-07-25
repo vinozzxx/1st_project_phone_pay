@@ -9,7 +9,7 @@ The goal of this project is to extract meaningful business insights that can sup
 
 The Indian digital payments story has truly captured the world’s imagination. From the largest towns to the remotest villages, there is a payments revolution being driven by mobile phone penetration, internet access, and state-of-the-art payments infrastructure.
 
-PhonePe, launched in 2016, has played a significant role in this transformation. As a way to give back to the data and developer community, PhonePe released the PhonePe Pulse Dataset API, which is licensed under [LICENSE] — an open data initiative to demystify digital payments in India.
+PhonePe, launched in 2016, has played a significant role in this transformation. As a way to give back to the data and developer community, PhonePe released the PhonePe Pulse Dataset API, which is licensed under [LICENSE](LICENSE) — an open data initiative to demystify digital payments in India.
 
 ## Table of Contents
 PhonePe Pulse - Data
