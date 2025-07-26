@@ -198,18 +198,19 @@ json
 
 ## 📊 PhonePe Pulse Data Analysis & Dashboard
 
-![PhonePe Dashboard ScreenShort]("C:\Users\Admin\OneDrive\Videos\Pictures\Screenshots\Screenshot (26).png")
+![PhonePe Dashboard ScreenShort](C:\Users\Admin\OneDrive\Videos\Pictures\Screenshots\Screenshot(26).png)
 
 ## 📁 Project Structure
 
 ```bash
 📁 1st_project_phone_pay/
 │
-├── 📂 data/                     # Processed data or raw GeoJSON files
-├── 📂 scripts/                  # Python scripts for ETL and analysis
-├── 📂 streamlit_app/            # Streamlit dashboard files
-├── 📄 requirements.txt          # Python dependencies
-├── 📄 README.md                 # Project overview
+├── 📂 Documentation/            # Processed data or user guides (optional)
+├── 📂 sql/                     # SQL queries or .sql files
+│   └── (unzipped .sql files)  # Unzip sql.zip for easy access
+├── 📄 README.md                # Project overview and instructions
+├── 📄 app.py                   # Streamlit dashboard app file
+├── 📄 project.ipynb            # Jupyter Notebook with analysis steps
 └── 📄 phonepe_dashboard.py      # Main Streamlit dashboard file
 ```
 
