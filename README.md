@@ -198,7 +198,7 @@ json
 
 ## 📊 PhonePe Pulse Data Analysis & Dashboard
 
-![PhonePe Dashboard ScreenShort](C:\Users\Admin\OneDrive\Videos\Pictures\Screenshots\Screenshot(29).png)
+![PhonePe Dashboard ScreenShort](https://github.com/vinozzxx/1st_project_phone_pay/blob/745665f074cd07e83fce9a3f51f4a3486b53ac9e/Screenshot%20(29).png)
 
 ## 📁 Project Structure
 
