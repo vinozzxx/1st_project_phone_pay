@@ -81,6 +81,90 @@ data/
 │   └── insurance/
 
 ```
+...
+## Data Extraction – Aggregated Insurance (State-Level)
+The following Python code extracts aggregated insurance data at the state level from the PhonePe Pulse dataset. It navigates through nested directories and reads JSON files representing different years and quarters.
+
+# How it works:
+Navigates through this folder path:
+
+# swift
+data/aggregated/insurance/country/india/state/{state}/{year}/{quarter}.json
+Extracts:
+
+-State
+-Year
+-Quarter
+-Transaction Type
+-Transaction Count
+-Transaction Amount
+
+# Example Code Snippet:
+# Required libraries
+import pandas as pd
+import json
+import os
+
+# Path to the state-wise data folder
+agg_state_path = r".../data/aggregated/insurance/country/india/state"
+agg_state_list = os.listdir(agg_state_path)
+
+# Create an empty dictionary to collect the data
+agg = {
+    'State': [], 'Year': [], 'Quarter': [],
+    'Transaction_type': [], 'Transaction_count': [], 'Transaction_amount': []
+}
+
+# Read JSON files and extract data
+for state in agg_state_list:
+    state_path = os.path.join(agg_state_path, state)
+    for year in os.listdir(state_path):
+        for qtr in os.listdir(os.path.join(state_path, year)):
+            json_path = os.path.join(state_path, year, qtr)
+            if json_path.endswith(".json"):
+                with open(json_path, 'r') as file:
+                    data = json.load(file)
+                for entry in data['data']['transactionData']:
+                    agg['State'].append(state)
+                    agg['Year'].append(year)
+                    agg['Quarter'].append(int(qtr.strip('.json')))
+                    agg['Transaction_type'].append(entry['name'])
+                    agg['Transaction_count'].append(entry['paymentInstruments'][0]['count'])
+                    agg['Transaction_amount'].append(entry['paymentInstruments'][0]['amount'])
+
+# Convert to DataFrame
+Agg_insurance_state = pd.DataFrame(agg)
+📄 JSON Structure (Sample)
+Sample file path:
+
+swift
+Copy code
+data/aggregated/insurance/country/india/state/delhi/2018/1.json
+Sample JSON:
+json
+Copy code
+{
+  "success": true,
+  "code": "SUCCESS",
+  "data": {
+    "from": 1514745000000,
+    "to": 1522175400000,
+    "transactionData": [
+      {
+        "name": "Health Insurance",
+        "paymentInstruments": [
+          {
+            "type": "TOTAL",
+            "count": 150000,
+            "amount": 350000000.00
+          }
+        ]
+      },
+      ...
+    ]
+  },
+  "responseTimestamp": 1630346628866
+}
 
 ## 📌 Project Overview
 
