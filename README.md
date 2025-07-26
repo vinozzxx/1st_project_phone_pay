@@ -206,11 +206,11 @@ json
 📁 1st_project_phone_pay/
 │
 ├── 📂 Documentation/            # Processed data or user guides (optional)
-├── 📂 sql/                     # SQL queries or .sql files
-│   └── (unzipped .sql files)  # Unzip sql.zip for easy access
-├── 📄 README.md                # Project overview and instructions
-├── 📄 app.py                   # Streamlit dashboard app file
-├── 📄 project.ipynb            # Jupyter Notebook with analysis steps
+├── 📂 sql/                      # SQL queries or .sql files
+│   └── (unzipped .sql files)     # Unzip sql.zip for easy access
+├── 📄 README.md                 # Project overview and instructions
+├── 📄 app.py                    # Streamlit dashboard app file
+├── 📄 project.ipynb             # Jupyter Notebook with analysis steps
 └── 📄 phonepe_dashboard.py      # Main Streamlit dashboard file
 ```
 
