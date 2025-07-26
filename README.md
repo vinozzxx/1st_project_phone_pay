@@ -12,26 +12,22 @@ The Indian digital payments story has truly captured the world’s imagination. 
 PhonePe, launched in 2016, has played a significant role in this transformation. As a way to give back to the data and developer community, PhonePe released the PhonePe Pulse Dataset API, which is licensed under [CDLA-Permissive-2.0 open data license](https://github.com/PhonePe/pulse/blob/master/LICENSE), — an open data initiative to demystify digital payments in India.
 
 ## Table of Contents
-- [PhonePe Pulse - Data](#phonepe-pulse---data)
-    - [ Project Description](#ProjectDescription)
-    - [Table of Contents](#table-of-contents)
-    - [Goal](#goal)
-    - [Guide](#guide)
-    - [Insights from PhonePe Data](#InsightsfromPhonePeData)
-    - [Tech Stack](#TechStack)
-    - [Key Features](#KeyFeatures)
-- [Documentation](#Documentation)
-    - [Folder Structure](#FolderStructure)
-    - [Structure Breakdown](#StructureBreakdown)
-    - [File Naming](FileNaming)
-    - [Example Folder Structure](#ExampleFolderStructure)
-- [Data Extraction – Aggregated Insurance (State-Level)](#DataExtraction–AggregatedInsurance (State-Level))
-    -[How it works](#Howitworks)
-    -[Example Code Snippet](ExampleCodeSnippet)
-    -[JSON Structure (Sample)](#JSONStructure (Sample))
-- [Dashboard Preview](#DashboardPreview)
-- [Project Structure](#ProjectStructure)
-- [FAQs](#FAQs)
+- [Project Description](#project-description)
+- [Dataset Insight](#dataset-insight)
+- [Tech Stack](#tech-stack)
+- [Key Features](#key-features)
+- [Documentation](#documentation)
+- [Folder Structure](#folder-structure)
+- [Structure Breakdown](#structure-breakdown)
+- [File Naming](#file-naming)
+- [Example Folder Structure](#example-folder-structure)
+- [Data Extraction Aggregated Insurance](#data-extraction-aggregated-insurance)
+  - [How it works](#how-it-works)
+  - [Example Code Snippet](#example-code-snippet)
+  - [JSON Structure (Sample)](#json-structure-sample)
+- [Dashboard](#PhonePePulseDataAnalysis&Dashboard)
+- [Project Structure](#project-structure)
+- [FAQs](#faqs)
 ---
 
 ## Goal
@@ -45,7 +41,7 @@ Follow these steps to explore the dataset:
 2. Navigate to the data folder
 3. Use Python scripts to extract insights
 
-## Insights from PhonePe Data
+## Dataset Insight
 
 This project focuses on analyzing digital transaction trends across India using the PhonePe Pulse dataset. It includes:
 - Analyze transaction behavior across states, quarters, and payment categories.
@@ -56,7 +52,7 @@ This project focuses on analyzing digital transaction trends across India using 
 ##  Tech Stack
 - [**Python**](https://www.python.org/) – Data analysis and visualization
 - [**PostgreSQL**](https://www.postgresql.org/) – Data storage and querying
-- [**Pandas](https://pandas.pydata.org/), [Plotly](https://plotly.com/), [Matplotlib**](https://matplotlib.org/) – Data manipulation and plotting
+- [**Pandas**](https://pandas.pydata.org/), [**Plotly**](https://plotly.com/), [**Matplotlib**](https://matplotlib.org/) – Data manipulation and plotting
 - [**Streamlit**](https://docs.streamlit.io/) – Dashboard development
 - [**GeoJSON**](https://geojson.io/#map=2/0/20) – Mapping state boundaries for choropleth maps
 
@@ -116,7 +112,7 @@ data/
 
 ```
 ...
-## Data Extraction – Aggregated Insurance (State-Level)
+## Data Extraction Aggregated Insurance:
 The following Python code extracts aggregated insurance data at the state level from the PhonePe Pulse dataset. It navigates through nested directories and reads JSON files representing different years and quarters.
 
 # How it works:
@@ -168,14 +164,13 @@ for state in agg_state_list:
 #Convert to DataFrame
 Agg_insurance_state = pd.DataFrame(agg)
 ```
-...
+
 ## JSON Structure (Sample)
 ```plaintext
 Sample file path:
 data/aggregated/insurance/country/india/state/delhi/2018/1.json
 Sample JSON:
 json
-Copy code
 {
   "success": true,
   "code": "SUCCESS",
@@ -201,7 +196,7 @@ Copy code
 ```
 ...
 
-## 📷 Dashboard Preview
+## 📊 PhonePe Pulse Data Analysis & Dashboard
 
 ![PhonePe Dashboard ScreenShort]("C:\Users\Admin\OneDrive\Videos\Pictures\Screenshots\Screenshot (26).png")
 
