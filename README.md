@@ -12,39 +12,24 @@ The Indian digital payments story has truly captured the world’s imagination. 
 PhonePe, launched in 2016, has played a significant role in this transformation. As a way to give back to the data and developer community, PhonePe released the PhonePe Pulse Dataset API, which is licensed under [LICENSE](LICENSE) — an open data initiative to demystify digital payments in India.
 
 ## Table of Contents
-PhonePe Pulse - Data
-Announcements
-Table of Contents
-Goal
-Guide
-Documentation
-Folder Structure
-JSON Structure / Syntax
-Aggregated
-data/aggregated/transaction/country/india/2018/1.json
-data/aggregated/user/country/india/2021/1.json
-data/aggregated/insurance/country/india/2021/1.json
-Map
-data/map/transaction/hover/country/india/2021/1.json
-data/map/user/hover/country/india/2021/1.json
-data/map/insurance/hover/country/india/2021/1.json
-Top
-data/top/transaction/country/india/2021/1.json
-data/top/user/country/india/2021/1.json
-data/top/insurance/country/india/2021/1.json
-FAQs
-LICENSE
+- [PhonePe Pulse - Data](#phonepe-pulse---data)
+- [Overview](#Overview)
+- [Table of Contents](#table-of-contents)
+- [Goal](#goal)
+- [Guide](#guide)
+
+---
 
 ## Goal
 The goal of this project is to analyze and visualize the PhonePe Pulse dataset to uncover insights into digital payment trends across India.
 
 ## Guide
-This data has been structured to provide details of following three sections with data cuts on Transactions, Users and Insurance of PhonePe Pulse - Explore tab.
 
-1.Aggregated - Aggregated values of various payment categories as shown under Categories section
-2.Map - Total values at the State and District levels.
-3.Top - Totals of top States / Districts /Pin Codes
-All the data provided in these folders is of JSON format. For more details on the structure/syntax you can refer to the JSON Structure / Syntax section of the documentation.
+Follow these steps to explore the dataset:
+
+1. Clone the repository
+2. Navigate to the data folder
+3. Use Python scripts to extract insights
 
 
 ## 📌 Project Overview
