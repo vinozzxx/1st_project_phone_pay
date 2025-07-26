@@ -87,8 +87,7 @@ The following Python code extracts aggregated insurance data at the state level 
 
 # How it works:
 Navigates through this folder path:
-
-data/aggregated/insurance/country/india/state/{state}/{year}/{quarter}.json
+[data]()/aggregated/insurance/country/india/state/{state}/{year}/{quarter}.json
 
 Extracts:
 -State
@@ -168,30 +167,28 @@ Copy code
 ```
 ...
 
-## 📌 Project Overview
+##  Project Overview
 
 This project focuses on analyzing digital transaction trends across India using the PhonePe Pulse dataset. It includes:
-
 - Analyze transaction behavior across states, quarters, and payment categories.
 - Understand user engagement across device brands and app usage.
 - Explore insurance transaction growth and regional adoption.
 - Build a dashboard for interactive data visualization and business insights.
 
-## 🧰 Tech Stack
+##  Tech Stack
+- [**Python**](https://www.python.org/) – Data analysis and visualization
+- [**PostgreSQL**](https://www.postgresql.org/) – Data storage and querying
+- [**Pandas](https://pandas.pydata.org/), [Plotly](https://plotly.com/), [Matplotlib**](https://matplotlib.org/) – Data manipulation and plotting
+- [**Streamlit**](https://docs.streamlit.io/) – Dashboard development
+- [**GeoJSON**](https://geojson.io/#map=2/0/20) – Mapping state boundaries for choropleth maps
 
-- **Python** – Data analysis and visualization
-- **PostgreSQL** – Data storage and querying
-- **Pandas, Plotly, Matplotlib** – Data manipulation and plotting
-- **Streamlit** – Dashboard development
-- **GeoJSON** – Mapping state boundaries for choropleth maps
+##  Key Features
 
-## 🔍 Key Features
-
-- 📊 Bar, line, and pie charts of transaction data
-- 🗺️ Choropleth map showing state-wise transaction values
-- 📅 Filters for Year and Quarter selection
-- 🏆 Top-performing states displayed dynamically
-- 🧠 Business insights and KPIs visualized
+-  Bar, line, and pie charts of transaction data
+-  Choropleth map showing state-wise transaction values
+-  Filters for Year and Quarter selection
+-  Top-performing states displayed dynamically
+-  Business insights and KPIs visualized
 
 ## 📷 Dashboard Preview
 
@@ -208,3 +205,55 @@ This project focuses on analyzing digital transaction trends across India using 
 ├── 📄 requirements.txt          # Python dependencies
 ├── 📄 README.md                 # Project overview
 └── 📄 phonepe_dashboard.py      # Main Streamlit dashboard file
+```
+...
+
+## FAQs
+1. What is this project about?
+This project analyzes and visualizes PhonePe Pulse data using Python, PostgreSQL, and Streamlit. It extracts data from JSON files, stores it in a database, and presents insights through an interactive dashboard.
+
+2. Where is the data sourced from?
+The data is sourced from the official PhonePe Pulse GitHub Repository, which contains quarterly transaction data by state and category.
+
+3. What technologies are used?
+[Python](https://www.python.org/) – Data extraction and processin
+[Pandas](https://pandas.pydata.org/) – Data manipulation
+[PostgreSQL](https://www.postgresql.org/) – Database storage
+[SQL](https://en.wikipedia.org/wiki/SQL) – Data analysis
+[Streamlit](https://docs.streamlit.io/) – Dashboard interface
+[Plotly](https://plotly.com/) / [Matplotlib](https://matplotlib.org/) – Visualizations
+
+4. What insights are provided?
+-Total transactions and amounts by state, year, and quarter
+-Popular transaction types (Recharge, P2P, Merchant Payments)
+-State-wise insurance trends
+-Device brand usage statistics
+-User growth and app engagement
+
+5.How to run the project?
+```plaintext
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
+...
+6. Can I contribute?
+Yes! Fork the repo, make your changes, and raise a pull request. All contributions are welcome.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
