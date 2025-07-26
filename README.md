@@ -31,6 +31,56 @@ Follow these steps to explore the dataset:
 2. Navigate to the data folder
 3. Use Python scripts to extract insights
 
+## Documentation
+
+### Folder Structure
+
+Navigate to the `data` folder to explore the following structure. The top-level folders include sections for:
+
+- **Aggregated Data**
+- **Map Data**
+- **Top Data**
+
+Each of these sections contains subfolders for:
+
+- `transaction`
+- `user`
+- `insurance`
+
+#### Structure Breakdown:
+
+- The data is organized at two levels: **Country** and **State**.
+- Inside the `country/india` folder, data is grouped by **year** (e.g., 2018, 2019, etc.).
+- Similarly, the `state` folder contains subfolders for each **state** in India, also grouped by **year**.
+
+#### File Naming:
+
+- Each year folder (both for country and state) includes **up to four JSON files**:
+  - `1.json`, `2.json`, `3.json`, `4.json`
+  - These represent **Quarter 1 to Quarter 4** of that year.
+
+---
+
+### Example Folder Structure:
+
+```plaintext
+data/
+├── aggregated/
+│   ├── transaction/
+│   │   └── country/
+│   │       └── india/
+│   │           ├── 2018/
+│   │           │   ├── 1.json
+│   │           │   ├── 2.json
+│   │           └── state/
+│   │               └── tamil-nadu/
+│   │                   ├── 2018/
+│   │                   │   ├── 1.json
+│   │                   │   └── 2.json
+│   ├── user/
+│   └── insurance/
+
+
 
 ## 📌 Project Overview
 
