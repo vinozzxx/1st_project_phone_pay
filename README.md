@@ -88,10 +88,9 @@ The following Python code extracts aggregated insurance data at the state level 
 # How it works:
 Navigates through this folder path:
 
-# swift
 data/aggregated/insurance/country/india/state/{state}/{year}/{quarter}.json
-Extracts:
 
+Extracts:
 -State
 -Year
 -Quarter
@@ -100,22 +99,23 @@ Extracts:
 -Transaction Amount
 
 # Example Code Snippet:
-# Required libraries
+```plaintext
+#Required libraries
 import pandas as pd
 import json
 import os
 
-# Path to the state-wise data folder
+#Path to the state-wise data folder
 agg_state_path = r".../data/aggregated/insurance/country/india/state"
 agg_state_list = os.listdir(agg_state_path)
 
-# Create an empty dictionary to collect the data
+#Create an empty dictionary to collect the data
 agg = {
     'State': [], 'Year': [], 'Quarter': [],
     'Transaction_type': [], 'Transaction_count': [], 'Transaction_amount': []
 }
 
-# Read JSON files and extract data
+#Read JSON files and extract data
 for state in agg_state_list:
     state_path = os.path.join(agg_state_path, state)
     for year in os.listdir(state_path):
@@ -132,13 +132,13 @@ for state in agg_state_list:
                     agg['Transaction_count'].append(entry['paymentInstruments'][0]['count'])
                     agg['Transaction_amount'].append(entry['paymentInstruments'][0]['amount'])
 
-# Convert to DataFrame
+#Convert to DataFrame
 Agg_insurance_state = pd.DataFrame(agg)
-📄 JSON Structure (Sample)
+```
+...
+## JSON Structure (Sample)
+```plaintext
 Sample file path:
-
-swift
-Copy code
 data/aggregated/insurance/country/india/state/delhi/2018/1.json
 Sample JSON:
 json
@@ -165,6 +165,8 @@ Copy code
   },
   "responseTimestamp": 1630346628866
 }
+```
+...
 
 ## 📌 Project Overview
 
