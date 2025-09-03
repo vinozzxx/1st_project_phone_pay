@@ -30,6 +30,7 @@ PhonePe, launched in 2016, has played a significant role in this transformation.
 - [FAQs](#faqs)
 ---
 **[`^        back to top        ^`](#Project-phonepe)**
+
 ## Goal
 The goal of this project is to analyze and visualize the PhonePe Pulse dataset to uncover insights into digital payment trends across India.
 
@@ -40,6 +41,7 @@ Follow these steps to explore the dataset:
 1. Clone the repository
 2. Navigate to the data folder
 3. Use Python scripts to extract insights
+**[`^        back to top        ^`](#Project-phonepe)**
 
 ## Dataset Insight
 
@@ -48,14 +50,16 @@ This project focuses on analyzing digital transaction trends across India using 
 - Understand user engagement across device brands and app usage.
 - Explore insurance transaction growth and regional adoption.
 - Build a dashboard for interactive data visualization and business insights.
-
+**[`^        back to top        ^`](#Project-phonepe)**
+  
 ##  Tech Stack
 - [**Python**](https://www.python.org/) – Data analysis and visualization
 - [**PostgreSQL**](https://www.postgresql.org/) – Data storage and querying
 - [**Pandas**](https://pandas.pydata.org/), [**Plotly**](https://plotly.com/), [**Matplotlib**](https://matplotlib.org/) – Data manipulation and plotting
 - [**Streamlit**](https://docs.streamlit.io/) – Dashboard development
 - [**GeoJSON**](https://geojson.io/#map=2/0/20) – Mapping state boundaries for choropleth maps
-
+**[`^        back to top        ^`](#Project-phonepe)**
+  
 ##  Key Features
 
 -  Bar, line, and pie charts of transaction data
@@ -63,7 +67,7 @@ This project focuses on analyzing digital transaction trends across India using 
 -  Filters for Year and Quarter selection
 -  Top-performing states displayed dynamically
 -  Business insights and KPIs visualized
- 
+ **[`^        back to top        ^`](#Project-phonepe)**
 
 ## Documentation
 
@@ -78,7 +82,8 @@ Each of these sections contains subfolders for:
 - `transaction`
 - `user`
 - `insurance`
-
+**[`^        back to top        ^`](#Project-phonepe)**
+  
 #### Structure Breakdown:
 - The data is organized at two levels: **Country** and **State**.
 - Inside the `country/india` folder, data is grouped by **year** (e.g., 2018, 2019, etc.).
@@ -90,6 +95,7 @@ Each of these sections contains subfolders for:
   - These represent **Quarter 1 to Quarter 4** of that year.
 
 ---
+**[`^        back to top        ^`](#Project-phonepe)**
 
 ### Example Folder Structure:
 
@@ -111,6 +117,8 @@ data/
 │   └── insurance/
 
 ```
+**[`^        back to top        ^`](#Project-phonepe)**
+
 ...
 ## Data Extraction Aggregated Insurance:
 The following Python code extracts aggregated insurance data at the state level from the PhonePe Pulse dataset. It navigates through nested directories and reads JSON files representing different years and quarters.
@@ -126,6 +134,9 @@ Extracts:
 -Transaction Type
 -Transaction Count
 -Transaction Amount
+
+**[`^        back to top        ^`](#Project-phonepe)**
+
 
 # Example Code Snippet:
 ```plaintext
@@ -200,6 +211,8 @@ json
 
 ![PhonePe Dashboard ScreenShort](https://github.com/vinozzxx/1st_project_phone_pay/blob/745665f074cd07e83fce9a3f51f4a3486b53ac9e/Screenshot%20(29).png)
 
+**[`^        back to top        ^`](#Project-phonepe)**
+
 ## 📁 Project Structure
 
 ```bash
@@ -213,6 +226,7 @@ json
 ├── 📄 project.ipynb             # Jupyter Notebook with analysis steps
 └── 📄 phonepe_dashboard.py      # Main Streamlit dashboard file
 ```
+**[`^        back to top        ^`](#Project-phonepe)**
 
 ## FAQs
 1. `What is this project about?`
@@ -245,7 +259,7 @@ streamlit run dashboard/app.py
 ```
 6. `Can I contribute?`
 Yes! Fork the repo, make your changes, and raise a pull request. All contributions are welcome.
-
+**[`^        back to top        ^`](#Project-phonepe)**
 
 
 
