@@ -41,7 +41,6 @@ Follow these steps to explore the dataset:
 1. Clone the repository
 2. Navigate to the data folder
 3. Use Python scripts to extract insights
-**[`^        back to top        ^`](#Project-phonepe)**
 
 ## Dataset Insight
 
@@ -50,7 +49,6 @@ This project focuses on analyzing digital transaction trends across India using 
 - Understand user engagement across device brands and app usage.
 - Explore insurance transaction growth and regional adoption.
 - Build a dashboard for interactive data visualization and business insights.
-**[`^        back to top        ^`](#Project-phonepe)**
   
 ##  Tech Stack
 - [**Python**](https://www.python.org/) – Data analysis and visualization
@@ -58,7 +56,6 @@ This project focuses on analyzing digital transaction trends across India using 
 - [**Pandas**](https://pandas.pydata.org/), [**Plotly**](https://plotly.com/), [**Matplotlib**](https://matplotlib.org/) – Data manipulation and plotting
 - [**Streamlit**](https://docs.streamlit.io/) – Dashboard development
 - [**GeoJSON**](https://geojson.io/#map=2/0/20) – Mapping state boundaries for choropleth maps
-**[`^        back to top        ^`](#Project-phonepe)**
   
 ##  Key Features
 
@@ -67,6 +64,7 @@ This project focuses on analyzing digital transaction trends across India using 
 -  Filters for Year and Quarter selection
 -  Top-performing states displayed dynamically
 -  Business insights and KPIs visualized
+
  **[`^        back to top        ^`](#Project-phonepe)**
 
 ## Documentation
@@ -82,7 +80,6 @@ Each of these sections contains subfolders for:
 - `transaction`
 - `user`
 - `insurance`
-**[`^        back to top        ^`](#Project-phonepe)**
   
 #### Structure Breakdown:
 - The data is organized at two levels: **Country** and **State**.
@@ -95,7 +92,6 @@ Each of these sections contains subfolders for:
   - These represent **Quarter 1 to Quarter 4** of that year.
 
 ---
-**[`^        back to top        ^`](#Project-phonepe)**
 
 ### Example Folder Structure:
 
@@ -117,6 +113,7 @@ data/
 │   └── insurance/
 
 ```
+
 **[`^        back to top        ^`](#Project-phonepe)**
 
 ...
@@ -134,9 +131,6 @@ Extracts:
 -Transaction Type
 -Transaction Count
 -Transaction Amount
-
-**[`^        back to top        ^`](#Project-phonepe)**
-
 
 # Example Code Snippet:
 ```plaintext
@@ -226,7 +220,6 @@ json
 ├── 📄 project.ipynb             # Jupyter Notebook with analysis steps
 └── 📄 phonepe_dashboard.py      # Main Streamlit dashboard file
 ```
-**[`^        back to top        ^`](#Project-phonepe)**
 
 ## FAQs
 1. `What is this project about?`
